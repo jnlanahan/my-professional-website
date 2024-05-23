@@ -33,3 +33,71 @@ nav ul {
 }
 
 nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a.active {
+  color: orange;
+}
+
+.contact-email {
+  font-size: 14px;
+}
+
+.section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  text-align: center;
+  /* opacity: 0; */
+  transition: opacity 1s ease-in-out;
+  border: 2px solid #fff; /* Added for better visibility */
+}
+
+.section-visible {
+  opacity: 1;
+}
+
+#about {
+  background-color: #1abc9c;
+}
+
+#timeline {
+  background-color: #3498db;
+}
+
+#projects {
+  background-color: #9b59b6;
+}
+
+#blog {
+  background-color: #e74c3c;
+}
+
+#contact {
+  background-color: #f39c12;
+}
+
+@keyframes pageFlip {
+  0% { transform: rotateY(0); }
+  100% { transform: rotateY(180deg); }
+}
+
+.flip-section {
+  animation: pageFlip 1s forwards;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+footer {
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0;
+}
