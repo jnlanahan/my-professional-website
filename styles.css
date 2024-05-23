@@ -45,7 +45,7 @@ nav ul li a {
 }
 
 nav ul li a.active {
-    color: rgb(51, 255, 0);
+    color: orange;
 }
 
 .contact-email {
@@ -64,7 +64,7 @@ nav ul li a.active {
 }
 
 .section-hidden {
-    opacity: 0.8; /* Set to a higher value to avoid full black screen */
+    opacity: 0; /* Set to a higher value to avoid full black screen */
 }
 
 #about {
@@ -85,15 +85,6 @@ nav ul li a.active {
 
 #contact {
     background-image: url('https://source.unsplash.com/random/1600x900?sig=5');
-}
-
-@keyframes pageFlip {
-    0% { transform: rotateY(0); }
-    100% { transform: rotateY(180deg); }
-}
-
-.flip-section {
-    animation: pageFlip 1s forwards;
 }
 
 h1 {

@@ -18,13 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const bounding = section.getBoundingClientRect();
 
             if (bounding.top >= 0 && bounding.bottom <= window.innerHeight) {
-                section.classList.add('section-visible');
-                section.classList.remove('section-hidden');
-                section.classList.add('flip-section');
+                section.style.opacity = '1';
             } else {
-                section.classList.remove('section-visible');
-                section.classList.add('section-hidden');
-                section.classList.remove('flip-section');
+                section.style.opacity = '0';
             }
         });
     }
