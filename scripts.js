@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks[index].classList.add('active');
     }
 
-    function pageFlipEffect() {
+    function handleSectionVisibility() {
         sections.forEach((section, idx) => {
             const bounding = section.getBoundingClientRect();
 
@@ -31,9 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', () => {
         highlightCurrentSection();
-        pageFlipEffect();
+        handleSectionVisibility();
     });
 
     highlightCurrentSection();
-    pageFlipEffect();
+    handleSectionVisibility();
 });
