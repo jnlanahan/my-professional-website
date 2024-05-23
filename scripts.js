@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function highlightCurrentSection() {
         let index = sections.length;
 
-        while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
+        while (--index && window.scrollY + 50 < sections[index].offsetTop) { }
 
         navLinks.forEach((link) => link.classList.remove('active'));
         navLinks[index].classList.add('active');
@@ -35,3 +35,4 @@ document.addEventListener('DOMContentLoaded', () => {
     highlightCurrentSection();
     pageFlipEffect();
 });
+
