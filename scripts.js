@@ -19,9 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (bounding.top >= 0 && bounding.bottom <= window.innerHeight) {
                 section.classList.add('section-visible');
+                section.classList.remove('section-hidden');
                 section.classList.add('flip-section');
             } else {
                 section.classList.remove('section-visible');
+                section.classList.add('section-hidden');
                 section.classList.remove('flip-section');
             }
         });
