@@ -58,13 +58,13 @@ nav ul li a.active {
     text-align: center;
     background-size: cover;
     background-position: center;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 1s ease-in-out;
     border: 2px solid #fff;  /* Added for better visibility */
 }
 
-.section-visible {
-    opacity: 1;
+.section-hidden {
+    opacity: 0;
 }
 
 #about {
